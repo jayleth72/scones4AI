@@ -2,8 +2,8 @@ export default function Home() {
   return (
     <div className="container mx-auto px-4 py-8">
       <section className="text-center mb-16">
-        <h1 className="text-4xl md:text-6xl font-bold mb-4">Welcome to Your Website</h1>
-        <p className="text-xl text-gray-600">Your compelling tagline goes here</p>
+        <h1 className="text-4xl md:text-6xl font-bold mb-4">Welcome to Scones & IT</h1>
+        <p className="text-xl text-gray-600">Professional IT Services & Solutions in Queensland</p>
       </section>
 
       <section className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-16">

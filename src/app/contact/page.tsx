@@ -14,6 +14,9 @@ export default function Contact() {
     e.preventDefault();
     // Here you would typically handle the form submission
     console.log('Form submitted:', formData);
+    // You can add email service integration here
+    // For now, we'll redirect to email client
+    window.location.href = `mailto:info@sconesit.com?subject=${encodeURIComponent(formData.subject)}&body=${encodeURIComponent(`Name: ${formData.name}\nEmail: ${formData.email}\n\nMessage:\n${formData.message}`)}`;
     // You can add your form submission logic here
   };
 

@@ -6,7 +6,7 @@ export default function Footer() {
           <div>
             <h3 className="text-lg font-semibold mb-4">About Us</h3>
             <p className="text-gray-300">
-              Brief description about your company or website.
+              Professional IT services and solutions tailored to meet your business needs.
             </p>
           </div>
           <div>
@@ -32,14 +32,14 @@ export default function Footer() {
           <div>
             <h3 className="text-lg font-semibold mb-4">Contact Info</h3>
             <ul className="space-y-2 text-gray-300">
-              <li>Email: info@example.com</li>
-              <li>Phone: (123) 456-7890</li>
-              <li>Address: 123 Street Name, City, Country</li>
+              <li>Email: info@sconesit.com</li>
+              <li>Phone: 0431 548 039</li>
+              <li>Queensland, Australia</li>
             </ul>
           </div>
         </div>
         <div className="mt-8 pt-8 border-t border-gray-700 text-center text-gray-300">
-          <p>&copy; {new Date().getFullYear()} Your Company Name. All rights reserved.</p>
+          <p>&copy; {new Date().getFullYear()} Scones & IT. All rights reserved.</p>
         </div>
       </div>
     </footer>
