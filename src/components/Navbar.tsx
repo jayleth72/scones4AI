@@ -1,6 +1,7 @@
 'use client';
 
 import Link from 'next/link';
+import Image from 'next/image';
 import { useState } from 'react';
 
 export default function Navbar() {
@@ -11,8 +12,16 @@ export default function Navbar() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between h-16">
           <div className="flex items-center">
-            <Link href="/" className="text-xl font-bold text-primary">
-              Scones & IT
+            <Link href="/" className="flex items-center space-x-2">
+              {/* Uncomment and adjust size once you add your logo.png */}
+              {/* <Image
+                src="/images/logo.png"
+                alt="Scones & IT Logo"
+                width={40}
+                height={40}
+                className="rounded-full"
+              /> */}
+              <span className="text-xl font-bold text-primary">Scones & IT</span>
             </Link>
           </div>
 
