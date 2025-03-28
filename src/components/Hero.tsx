@@ -38,6 +38,7 @@ const Hero: React.FC = () => {
           </div>
         </div>
       </section>
+    </div>
   );
 };
 
