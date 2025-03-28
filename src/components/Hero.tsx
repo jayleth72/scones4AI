@@ -5,20 +5,21 @@ import React from 'react';
 
 const Hero: React.FC = () => {
   return (
-    <section className="relative">
-      <div className="grid lg:grid-cols-2">
-        {/* Image Container - Full height on mobile, left side on desktop */}
-        <div className="relative h-screen lg:h-[600px] w-screen lg:w-auto">
-          <Image
-            src="/images/hero/scones_man1.png"
-            alt="Hero image"
-            fill
-            priority
-            className="object-cover"
-            quality={90}
-          />
-          {/* Overlay only shows on mobile */}
-          <div className="absolute inset-0 bg-black/40 lg:hidden" />
+    <div className="max-w-[100vw] overflow-hidden">
+      <section className="relative w-full">
+        <div className="grid lg:grid-cols-2">
+          {/* Image Container - Full height on mobile, left side on desktop */}
+          <div className="relative h-screen lg:h-[600px]">
+            <Image
+              src="/images/hero/scones_man1.png"
+              alt="Hero image"
+              fill
+              priority
+              className="object-cover"
+              quality={90}
+            />
+            {/* Overlay only shows on mobile */}
+            <div className="absolute inset-0 bg-black/40 lg:hidden" />
         </div>
 
         {/* Content Container */}
