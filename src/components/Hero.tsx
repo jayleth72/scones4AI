@@ -6,16 +6,15 @@ import React from 'react';
 const Hero: React.FC = () => {
   return (
     <section className="relative">
-      <div className="grid lg:grid-cols-2 min-h-[100svh] lg:min-h-[600px]">
+      <div className="grid lg:grid-cols-2">
         {/* Image Container - Full height on mobile, left side on desktop */}
-        <div className="relative order-1 min-h-[100svh] lg:h-full">
+        <div className="relative h-screen lg:h-[600px] w-screen lg:w-auto">
           <Image
             src="/images/hero/scones_man1.png"
             alt="Hero image"
-            width={1920}
-            height={1080}
+            fill
             priority
-            className="absolute inset-0 w-screen lg:w-full h-full object-cover"
+            className="object-cover"
             quality={90}
           />
           {/* Overlay only shows on mobile */}
