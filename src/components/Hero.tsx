@@ -9,13 +9,14 @@ const Hero: React.FC = () => {
       <section className="relative w-full">
         <div className="grid lg:grid-cols-2">
           {/* Image Container - Full height on mobile, left side on desktop */}
-          <div className="relative h-screen lg:h-[600px]">
+          <div className="relative h-[80vh] lg:h-[600px] flex items-center justify-center">
             <Image
               src="/images/hero/scones_man1.png"
               alt="Hero image"
-              fill
+              width={800}
+              height={1000}
               priority
-              className="object-cover"
+              className="w-full h-full object-cover"
               quality={90}
             />
             {/* Overlay only shows on mobile */}
