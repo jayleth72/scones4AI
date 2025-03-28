@@ -5,18 +5,17 @@ import React from 'react';
 
 const Hero: React.FC = () => {
   return (
-    <section className="relative overflow-hidden">
-      <div className="grid lg:grid-cols-2 min-h-[100svh] lg:min-h-[600px] max-w-screen">
+    <section className="relative">
+      <div className="grid lg:grid-cols-2 min-h-[100svh] lg:min-h-[600px]">
         {/* Image Container - Full height on mobile, left side on desktop */}
-        <div className="relative h-[100svh] lg:h-full order-1 max-w-full">
+        <div className="relative order-1 min-h-[100svh] lg:h-full">
           <Image
             src="/images/hero/scones_man1.png"
             alt="Hero image"
-            fill
+            width={1920}
+            height={1080}
             priority
-            sizes="(max-width: 1024px) 100vw, 50vw"
-            className="object-cover object-center max-w-full"
-            style={{ width: '100%', height: '100%' }}
+            className="absolute inset-0 w-screen lg:w-full h-full object-cover"
             quality={90}
           />
           {/* Overlay only shows on mobile */}
